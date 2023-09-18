@@ -82,7 +82,7 @@ class GildedRoseTest {
     void conjuredItemsDegradeFaster() {
         Item[] items = new Item[] {
             new Item("Conjured Mana Cake", 20, 10),
-            new Item("Conjured Mana Cake", 20, 0),
+            new Item("Conjured Mana Cake", 0, 10),
         };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
