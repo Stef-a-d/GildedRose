@@ -2,7 +2,7 @@ package com.gildedrose;
 
 public class BaseQualityUpdater {
 
-    public Item updateQuality(Item item) {
+    public void updateQuality(Item item) {
         if (!item.name.equals("Aged Brie")
             && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
             updateBeforeSellIn(item);
@@ -26,9 +26,7 @@ public class BaseQualityUpdater {
             }
         }
 
-        if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
-            item.sellIn = item.sellIn - 1;
-        }
+        updateSellIn(item);
 
         if (item.sellIn < 0) {
             if (!item.name.equals("Aged Brie")) {
@@ -43,24 +41,21 @@ public class BaseQualityUpdater {
                 }
             }
         }
-        return item;
     }
 
-    protected Item updateBeforeSellIn(Item item) {
+    protected void updateBeforeSellIn(Item item) {
         if (item.quality > 0) {
-            if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
-                item.quality = item.quality - 1;
-            }
+            item.quality = item.quality - 1;
         }
-        return item;
     }
 
-    protected Item updateAfterSellIn(Item item) {
+    protected void updateAfterSellIn(Item item) {
         if (item.quality > 0) {
-            if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
-                item.quality = item.quality - 1;
-            }
+            item.quality = item.quality - 1;
         }
-        return item;
+    }
+
+    protected void updateSellIn(Item item) {
+        item.sellIn = item.sellIn - 1;
     }
 }
