@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class SulfurasQualityUpdater extends BaseQualityUpdater{
+public class SulfurasItemUpdater extends BaseItemUpdater {
 
 
     @Override

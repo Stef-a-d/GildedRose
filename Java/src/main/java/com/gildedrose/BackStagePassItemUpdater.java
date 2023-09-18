@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class BackStagePassQualityUpdater extends BaseQualityUpdater{
+public class BackStagePassItemUpdater extends BaseItemUpdater {
 
     @Override
     protected void updateBeforeSellIn(Item item) {

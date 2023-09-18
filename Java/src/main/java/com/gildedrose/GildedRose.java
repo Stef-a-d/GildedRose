@@ -11,19 +11,19 @@ class GildedRose {
         for (Item item : items) {
             switch (item.name) {
                 case "Aged Brie":
-                    new BrieQualityUpdater().updateQuality(item);
+                    new BrieItemUpdater().updateQuality(item);
                     break;
                 case "Sulfuras, Hand of Ragnaros":
-                    new SulfurasQualityUpdater().updateQuality(item);
+                    new SulfurasItemUpdater().updateQuality(item);
                     break;
                 case "Backstage passes to a TAFKAL80ETC concert":
-                    new BackStagePassQualityUpdater().updateQuality(item);
+                    new BackStagePassItemUpdater().updateQuality(item);
                     break;
                 case "Conjured Mana Cake":
-                    new ConjuredItemsQualityUpdater().updateQuality(item);
+                    new ConjuredItemsItemUpdater().updateQuality(item);
                     break;
                 default:
-                    new BaseQualityUpdater().updateQuality(item);
+                    new BaseItemUpdater().updateQuality(item);
                     break;
             }
         }

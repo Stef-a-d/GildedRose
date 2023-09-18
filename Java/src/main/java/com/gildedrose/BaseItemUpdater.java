@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class BaseQualityUpdater {
+public class BaseItemUpdater {
 
     public void updateQuality(Item item) {
         updateBeforeSellIn(item);

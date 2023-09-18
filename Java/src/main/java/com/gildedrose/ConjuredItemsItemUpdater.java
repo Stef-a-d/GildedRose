@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class ConjuredItemsQualityUpdater extends BaseQualityUpdater{
+public class ConjuredItemsItemUpdater extends BaseItemUpdater {
 
     @Override
     protected void updateBeforeSellIn(Item item) {

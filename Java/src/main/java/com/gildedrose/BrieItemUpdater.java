@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class BrieQualityUpdater extends BaseQualityUpdater{
+public class BrieItemUpdater extends BaseItemUpdater {
 
     @Override
     protected void updateBeforeSellIn(Item item) {
