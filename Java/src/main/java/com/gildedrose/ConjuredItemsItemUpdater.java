@@ -2,6 +2,8 @@ package com.gildedrose;
 
 public class ConjuredItemsItemUpdater extends BaseItemUpdater {
 
+    public static final String ITEM = "Conjured Mana Cake";
+
     @Override
     protected void updateBeforeSellIn(Item item) {
         super.updateBeforeSellIn(item);

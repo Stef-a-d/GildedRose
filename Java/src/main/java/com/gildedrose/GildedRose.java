@@ -10,16 +10,16 @@ class GildedRose {
     public void updateQuality() {
         for (Item item : items) {
             switch (item.name) {
-                case "Aged Brie":
+                case BrieItemUpdater.ITEM:
                     new BrieItemUpdater().updateQuality(item);
                     break;
-                case "Sulfuras, Hand of Ragnaros":
+                case SulfurasItemUpdater.ITEM:
                     new SulfurasItemUpdater().updateQuality(item);
                     break;
-                case "Backstage passes to a TAFKAL80ETC concert":
+                case BackStagePassItemUpdater.ITEM:
                     new BackStagePassItemUpdater().updateQuality(item);
                     break;
-                case "Conjured Mana Cake":
+                case ConjuredItemsItemUpdater.ITEM:
                     new ConjuredItemsItemUpdater().updateQuality(item);
                     break;
                 default:
